@@ -1,6 +1,6 @@
 {%- from 'tool-kitty/map.jinja' import kitty %}
 
-{%- if kitty.users | selectattr('dotconfig') %}
+{%- if kitty.users | selectattr('dotconfig', 'defined') | selectattr('dotconfig') %}
 include:
   - .configsync
 {%- endif %}

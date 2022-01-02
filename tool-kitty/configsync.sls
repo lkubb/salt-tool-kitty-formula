@@ -1,6 +1,6 @@
 {%- from 'tool-kitty/map.jinja' import kitty %}
 
-{%- for user in kitty.users | selectattr('dotconfig') %}
+{%- for user in kitty.users | selectattr('dotconfig', 'defined') | selectattr('dotconfig') %}
 kitty configuration is synced for user '{{ user.name }}':
   file.recurse:
     - name: {{ user._kitty.confdir }}
