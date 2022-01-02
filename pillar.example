@@ -1,0 +1,9 @@
+tool:
+  users:
+    user:
+      dotconfig: true
+
+  kitty:
+    users:        # you can add kitty-specific user data like in tool:users
+      user:
+        dotconfig: false
