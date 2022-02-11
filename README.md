@@ -46,6 +46,8 @@ tool:
 The following shows an example of `tool-kitty` pillar configuration. Namespace it to `tool:users` and/or `tool:kitty:users`.
 ```yaml
 user:
+  # sync this user's config from a dotfiles repo available as
+  # salt://dotconfig/<user>/kitty or salt://dotconfig/kitty
   dotconfig: true
 ```
 

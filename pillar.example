@@ -1,9 +1,6 @@
 tool:
   users:
     user:
+      # sync this user's config from a dotfiles repo available as
+      # salt://dotconfig/<user>/kitty or salt://dotconfig/kitty
       dotconfig: true
-
-  kitty:
-    users:        # you can add kitty-specific user data like in tool:users
-      user:
-        dotconfig: false
