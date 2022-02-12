@@ -48,7 +48,10 @@ The following shows an example of `tool-kitty` pillar configuration. Namespace i
 user:
   # sync this user's config from a dotfiles repo available as
   # salt://dotconfig/<user>/kitty or salt://dotconfig/kitty
-  dotconfig: true
+  dotconfig:              # can be bool or mapping
+    file_mode: '0600'     # default: keep destination or salt umask (new)
+    dir_mode: '0700'      # default: 0700
+    clean: false          # delete files in target. default: false
 ```
 
 #### Formula-specific
