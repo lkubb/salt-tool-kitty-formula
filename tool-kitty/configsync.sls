@@ -10,7 +10,7 @@ kitty configuration is synced for user '{{ user.name }}':
       - salt://dotconfig/{{ user.name }}/kitty
       - salt://dotconfig/kitty
     - context:
-        user: {{ user }}
+        user: {{ user | json }}
     - template: jinja
     - user: {{ user.name }}
     - group: {{ user.group }}
