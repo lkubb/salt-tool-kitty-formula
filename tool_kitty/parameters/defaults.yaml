@@ -1,0 +1,19 @@
+# -*- coding: utf-8 -*-
+# vim: ft=yaml
+#
+# Set default values.
+---
+values:
+  lookup:
+    pkg:
+      name: kitty
+    paths:
+      confdir: '.config/kitty'
+      conffile: 'kitty.conf'
+      xdg_dirname: 'kitty'
+      xdg_conffile: 'kitty.conf'
+    rootgroup: root
+  # Just here for testing
+  added_in_defaults: defaults_value
+  winner: defaults
+...
