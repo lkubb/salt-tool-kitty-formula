@@ -9,6 +9,7 @@
 include:
   - {{ sls_config_clean }}
 
+
 Kitty is removed:
   pkg.removed:
     - name: {{ kitty.lookup.pkg.name }}
