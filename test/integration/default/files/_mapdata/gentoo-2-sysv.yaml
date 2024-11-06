@@ -22,6 +22,8 @@ values:
     paths:
       confdir: '.config/kitty'
       conffile: 'kitty.conf'
+      xdg_dirname: 'kitty'
+      xdg_conffile: 'kitty.conf'
     rootgroup: root
   map_jinja:
     sources:

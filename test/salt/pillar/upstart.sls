@@ -1,5 +1,5 @@
-# -*- coding: utf-8 -*-
 # vim: ft=yaml
+# yamllint disable rule:comments-indentation
 ---
 tool_global:
   users:
@@ -21,6 +21,9 @@ tool_kitty:
     paths:
       confdir: '.config/kitty'
       conffile: 'kitty.conf'
+      xdg_dirname: 'kitty'
+      xdg_conffile: 'kitty.conf'
+    rootgroup: root
 
   tofs:
     # The files_switch key serves as a selector for alternative
