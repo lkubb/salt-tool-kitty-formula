@@ -1,5 +1,5 @@
-Welcome to salt-tool-kitty-formula's documentation!
-===================================================
+Welcome to tool-kitty-formula's documentation!
+==============================================
 
 .. toctree::
    :maxdepth: 2

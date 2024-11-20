@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "salt_tool_kitty"
+name = "tool_kitty_formula"
 version = "1.0.0"
 description = "Saltstack states to manage Kitty"
 authors = ["lkubb"]
